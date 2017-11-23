@@ -16,7 +16,7 @@ function export_local_mbtiles() {
        exit 500
     fi
 
-    exec tilelive-copy \
+    exec /usr/src/app/node_modules/.bin/tilelive-copy \
         --scheme="list" \
         --list="$LIST_FILE" \
         --timeout="$TILE_TIMEOUT" \
